@@ -1,0 +1,45 @@
+.main_color {
+  color: aqua;
+}
+
+.container {
+  border: 8px  rgba(0, 255, 255, 0.59);
+  margin-top: 80px;
+  padding: 50px;
+  text-align: center;
+}
+
+.header {
+  margin-bottom: 5px;
+}
+
+.input {
+  padding: 10px;
+  margin: 7px;
+  border: 1px solid transparent;
+  outline: 4px solid aqua;
+  border-radius: 3px;
+}
+/* .input:focus,
+.input:hover {
+  border-color: red; /* Change the border color to red when input is focused or hovered */
+/* } */
+*/ .button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  margin: 5px;
+  font-weight: 500;
+  background-color: aqua;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
