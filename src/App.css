@@ -1,7 +1,11 @@
-body {
+/* body {
   display: flex;
   justify-content: center;
   text-align: center;
   height: 100vh;
-}
+} */
 
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
