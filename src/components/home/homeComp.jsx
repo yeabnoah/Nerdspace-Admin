@@ -17,31 +17,19 @@ function HomeComp() {
             flex: 1,
             height: "7vh",
             borderRadius: 10,
-            margin: ".7%",
+            margin: "15px 20px 15px 20px",
             display: "flex",
           }}
         >
           <div
             style={{
-              flex: 2.8,
+              flex: 1,
               height: "max-content",
               borderRadius: 10,
               overflowY: "hidden",
               padding: 0,
             }}
           >
-            <p
-              style={{
-                fontFamily: "poppins",
-                marginTop: ".2%",
-                marginBottom: 0,
-                marginLeft: ".5%",
-                padding: 0,
-                fontSize: 12,
-              }}
-            >
-              Welcome to the Nerd-Space Admin Dashboard
-            </p>
             <h3
               style={{
                 fontFamily: "poppins",
@@ -53,13 +41,13 @@ function HomeComp() {
                 fontSize: 29,
               }}
             >
-              Use the available resources to control Nerd space
+              Statistics
             </h3>
           </div>
 
           <div
             style={{
-              flex: 1.2,
+              flex: 2,
               height: "100%",
               borderRadius: 10,
               marginLeft: "1%",
@@ -74,27 +62,83 @@ function HomeComp() {
                 justifyContent: "end",
               }}
             >
-              <img
-                src={iconsImgs.bell}
-                alt="hi"
+              <div style={{ display: "flex", flex: 2 }}>
+                <img
+                  src={iconsImgs.search}
+                  alt="hi"
+                  style={{
+                    height: "35%",
+                    marginRight: "2%",
+                    marginTop: "2.3vh",
+                  }}
+                />
+
+                <input
+                  placeholder="Search What you wanted"
+                  style={{
+                    background: "transparent",
+
+                    borderRadius: 10,
+                    border: 0,
+                    color: "#fff",
+                    fontFamily: "poppins",
+                    outline: "none",
+                    fontSize: 16,
+                  }}
+                />
+              </div>
+
+              <div
                 style={{
-                  height: "50%",
-                  marginRight: "5%",
-                  marginTop: "1.7vh",
+                  display: "flex",
+                  flex: 1,
+                  justifyContent: "space-evenly",
                 }}
-              />
-              <img
-                src={iconsImgs.gears}
-                alt="hi"
-                style={{ height: "50%", marginTop: "1.7vh" }}
-              />
-            </div>
-            <div style={{ height: "100%", flex: 1, marginLeft: "10%" }}>
-              <img
-                src={logo}
-                alt="hi"
-                style={{ flex: 1, height: "100%", borderRadius: 100 }}
-              />
+              >
+                <button
+                  style={{
+                    padding: "10px 20px 10px 20px",
+                    background: "#7864f6",
+                    border: "1px solid #7864f6",
+                    color: "#fff",
+                    fontFamily: "poppins",
+                    borderRadius: 5,
+                    flex: 1,
+                    fontSize: 18,
+                  }}
+                >
+                  Announce
+                </button>
+
+                <div style={{ display: "flex", flex: 2, marginLeft: 50 }}>
+                  <img
+                    src={iconsImgs.bell}
+                    alt="hi"
+                    style={{
+                      height: "50%",
+                      marginRight: 10,
+                      marginTop: ".5vh",
+                      flex: 0.3,
+                      border: "1px solid rgb(220, 220, 220)",
+                      padding: 10,
+                      borderRadius: 10,
+                    }}
+                  />
+                  <img
+                    src={iconsImgs.gears}
+                    alt="hi"
+                    style={{
+                      height: "50%",
+                      marginRight: 20,
+                      marginTop: ".5vh",
+                      flex: 0.3,
+                      border: "1px solid rgb(220, 220, 220)",
+                      padding: 10,
+                      borderRadius: 10,
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -104,115 +148,62 @@ function HomeComp() {
           style={{
             height: "40vh",
             flex: 1,
-            margin: ".7%",
+            margin: "10px 15px 10px 15px",
             borderRadius: 10,
             display: "flex",
-            backgroundColor: "#4242ff",
-            // border: "2px dashed #6e6e76",
-          }}
-        >
-          <div
-            style={{
-              marginLeft: "2%",
-              justifyContent: "flex-start",
-              alignItems: "start",
-              paddingLeft: "3%",
-              paddingRight: "3%",
-              margin: "1%",
-              // #5000ff
-              borderRadius: 10,
-              // border: "2px dashed #6e6e76",
-            }}
-          >
-            <h3
-              style={{
-                textAlign: "start",
-                fontFamily: "poppins",
-                fontSize: 20,
-                fontWeight: "100",
-              }}
-            >
-              23,589 - Users
-            </h3>
-            <h3
-              style={{
-                textAlign: "start",
-                fontFamily: "poppins",
-                fontSize: 20,
-                fontWeight: "100",
-              }}
-            >
-              858,790 - Posts
-            </h3>
-            <h3
-              style={{
-                textAlign: "start",
-                fontFamily: "poppins",
-                fontSize: 20,
-                fontWeight: "100",
-              }}
-            >
-              345,831 - Likes
-            </h3>
-            <h3
-              style={{
-                textAlign: "start",
-                fontFamily: "poppins",
-                fontSize: 20,
-                fontWeight: "100",
-              }}
-            >
-              49,801 - Comments
-            </h3>
-            <h3
-              style={{
-                textAlign: "start",
-                fontFamily: "poppins",
-                fontSize: 20,
-                fontWeight: "100",
-              }}
-            >
-              858,790 - Shares
-            </h3>
-          </div>
-        </div>
-        <div
-          style={{
-            backgroundColor: "#3a3a43",
-            height: "40vh",
-            width: "25%",
-            borderRadius: 10,
-            margin: "1%",
-          }}
-        ></div>
-      </div>
-      <div style={{ display: "flex" }}>
-        <div
-          style={{
-            backgroundColor: "blueviolet",
-            height: "40vh",
-            flex: 1,
-            borderRadius: 10,
-            margin: "1%",
+            backgroundColor: "#7864f6",
           }}
         ></div>
 
         <div
           style={{
-            backgroundColor: "palegoldenrod",
+            backgroundColor: "#37383f",
+            height: "40vh",
+            width: "25%",
+            borderRadius: 10,
+            margin: "10px 15px 10px 15px",
+            flex: 1,
+          }}
+        ></div>
+
+        <div
+          style={{
+            height: "40vh",
+            flex: 1,
+            margin: "10px 15px 10px 15px",
+            borderRadius: 10,
+            display: "flex",
+            backgroundColor: "#dcdcdc",
+          }}
+        ></div>
+      </div>
+      <div style={{ display: "flex" }}>
+        <div
+          style={{
+            backgroundColor: "#37383f",
             height: "40vh",
             flex: 1,
             borderRadius: 10,
-            margin: "1%",
+            margin: "10px 15px 10px 15px",
+          }}
+        ></div>
+
+        <div
+          style={{
+            backgroundColor: "rgb(220, 220, 220)",
+            height: "40vh",
+            flex: 1,
+            borderRadius: 10,
+            margin: "10px 15px 10px 15px",
           }}
         ></div>
         <div
           style={{
-            backgroundColor: "deeppink",
+            backgroundColor: "#37383f",
             height: "40vh",
             flex: 1,
             borderRadius: 10,
-            margin: "1%",
+            margin: "10px 15px 10px 15px",
           }}
         ></div>
       </div>
